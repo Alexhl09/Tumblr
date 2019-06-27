@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3E7CAE62A78E2596ECB7308 /* Pods_Tumblr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED3816CEC91C5862C18A3F2 /* Pods_Tumblr.framework */; };
 		EAA4B54122C534680098BFEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA4B54022C534680098BFEC /* AppDelegate.m */; };
 		EAA4B54422C534680098BFEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA4B54322C534680098BFEC /* ViewController.m */; };
 		EAA4B54722C534680098BFEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA4B54522C534680098BFEC /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14317D508F7CC06C9429ED28 /* Pods-Tumblr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tumblr.debug.xcconfig"; path = "Target Support Files/Pods-Tumblr/Pods-Tumblr.debug.xcconfig"; sourceTree = "<group>"; };
+		6ED3816CEC91C5862C18A3F2 /* Pods_Tumblr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tumblr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F09597824F1B822197A9DB5 /* Pods-Tumblr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tumblr.release.xcconfig"; path = "Target Support Files/Pods-Tumblr/Pods-Tumblr.release.xcconfig"; sourceTree = "<group>"; };
 		EAA4B53C22C534680098BFEC /* Tumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA4B53F22C534680098BFEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EAA4B54022C534680098BFEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E7CAE62A78E2596ECB7308 /* Pods_Tumblr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		586357114099B077863C49EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6ED3816CEC91C5862C18A3F2 /* Pods_Tumblr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5C90F7ADAF2E9E32E30B164 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14317D508F7CC06C9429ED28 /* Pods-Tumblr.debug.xcconfig */,
+				7F09597824F1B822197A9DB5 /* Pods-Tumblr.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EAA4B53322C534680098BFEC = {
 			isa = PBXGroup;
 			children = (
 				EAA4B53E22C534680098BFEC /* Tumblr */,
 				EAA4B53D22C534680098BFEC /* Products */,
+				A5C90F7ADAF2E9E32E30B164 /* Pods */,
+				586357114099B077863C49EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAA4B55222C534690098BFEC /* Build configuration list for PBXNativeTarget "Tumblr" */;
 			buildPhases = (
+				FE8FA10C5713084EA806BC26 /* [CP] Check Pods Manifest.lock */,
 				EAA4B53822C534680098BFEC /* Sources */,
 				EAA4B53922C534680098BFEC /* Frameworks */,
 				EAA4B53A22C534680098BFEC /* Resources */,
+				B9E62FDE982AE9EBFB4495FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9E62FDE982AE9EBFB4495FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tumblr/Pods-Tumblr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tumblr/Pods-Tumblr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tumblr/Pods-Tumblr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE8FA10C5713084EA806BC26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tumblr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EAA4B53822C534680098BFEC /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		EAA4B55322C534690098BFEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14317D508F7CC06C9429ED28 /* Pods-Tumblr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		EAA4B55422C534690098BFEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F09597824F1B822197A9DB5 /* Pods-Tumblr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
