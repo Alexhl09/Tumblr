@@ -3,17 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		E3E7CAE62A78E2596ECB7308 /* Pods_Tumblr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED3816CEC91C5862C18A3F2 /* Pods_Tumblr.framework */; };
 		EAA4B54122C534680098BFEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA4B54022C534680098BFEC /* AppDelegate.m */; };
-		EAA4B54422C534680098BFEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA4B54322C534680098BFEC /* ViewController.m */; };
 		EAA4B54722C534680098BFEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA4B54522C534680098BFEC /* Main.storyboard */; };
 		EAA4B54922C534690098BFEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA4B54822C534690098BFEC /* Assets.xcassets */; };
 		EAA4B54C22C534690098BFEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA4B54A22C534690098BFEC /* LaunchScreen.storyboard */; };
 		EAA4B54F22C534690098BFEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA4B54E22C534690098BFEC /* main.m */; };
+		EAA4B55722C5390E0098BFEC /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA4B55622C5390E0098BFEC /* PhotosViewController.m */; };
+		EAA4B55A22C53D5F0098BFEC /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA4B55922C53D5F0098BFEC /* PostTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +24,15 @@
 		EAA4B53C22C534680098BFEC /* Tumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA4B53F22C534680098BFEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EAA4B54022C534680098BFEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EAA4B54222C534680098BFEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EAA4B54322C534680098BFEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EAA4B54622C534680098BFEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAA4B54822C534690098BFEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAA4B54B22C534690098BFEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAA4B54D22C534690098BFEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAA4B54E22C534690098BFEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAA4B55522C5390E0098BFEC /* PhotosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		EAA4B55622C5390E0098BFEC /* PhotosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		EAA4B55822C53D5F0098BFEC /* PostTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
+		EAA4B55922C53D5F0098BFEC /* PostTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +61,6 @@
 				14317D508F7CC06C9429ED28 /* Pods-Tumblr.debug.xcconfig */,
 				7F09597824F1B822197A9DB5 /* Pods-Tumblr.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,13 +87,15 @@
 			children = (
 				EAA4B53F22C534680098BFEC /* AppDelegate.h */,
 				EAA4B54022C534680098BFEC /* AppDelegate.m */,
-				EAA4B54222C534680098BFEC /* ViewController.h */,
-				EAA4B54322C534680098BFEC /* ViewController.m */,
 				EAA4B54522C534680098BFEC /* Main.storyboard */,
 				EAA4B54822C534690098BFEC /* Assets.xcassets */,
 				EAA4B54A22C534690098BFEC /* LaunchScreen.storyboard */,
 				EAA4B54D22C534690098BFEC /* Info.plist */,
 				EAA4B54E22C534690098BFEC /* main.m */,
+				EAA4B55522C5390E0098BFEC /* PhotosViewController.h */,
+				EAA4B55622C5390E0098BFEC /* PhotosViewController.m */,
+				EAA4B55822C53D5F0098BFEC /* PostTableViewCell.h */,
+				EAA4B55922C53D5F0098BFEC /* PostTableViewCell.m */,
 			);
 			path = Tumblr;
 			sourceTree = "<group>";
@@ -210,9 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAA4B54422C534680098BFEC /* ViewController.m in Sources */,
 				EAA4B54F22C534690098BFEC /* main.m in Sources */,
+				EAA4B55722C5390E0098BFEC /* PhotosViewController.m in Sources */,
 				EAA4B54122C534680098BFEC /* AppDelegate.m in Sources */,
+				EAA4B55A22C53D5F0098BFEC /* PostTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
