@@ -35,6 +35,14 @@
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error != nil) {
             NSLog(@"%@", [error localizedDescription]);
+            UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Your netwotk is not working" preferredStyle:(UIAlertControllerStyleAlert)];
+            UIAlertAction * accept = [UIAlertAction actionWithTitle:@"Ok" style:(UIAlertActionStyleCancel) handler:nil];
+            [alert addAction:accept];
+            
+            [self presentViewController:alert animated:YES completion:nil];
+            
+            
+            
         }
         else {
             NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
